@@ -1,9 +1,6 @@
-﻿using System.Linq;
-using System.Text.RegularExpressions;
-
-namespace Metodos
+﻿namespace Ejercicios
 {
-    public class Ejercicios
+    public class Ej
     {
         public static void Ejercicio_01()
         {

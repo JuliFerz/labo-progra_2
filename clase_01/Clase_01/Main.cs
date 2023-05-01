@@ -49,8 +49,8 @@ namespace Clase_01
             //Ejercicios.Ejercicio_04();
             //Ejercicios.Ejercicio_06();
             //Ejercicios.Ejercicio_07();
-            Ejercicios.Ejercicio_09();
-            //Ejercicios.Ejercicio_10();
+            //Ejercicios.Ejercicio_09();
+            Ejercicios.Ejercicio_10();
 
         }
     }
