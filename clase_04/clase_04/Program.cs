@@ -13,7 +13,7 @@ namespace clase_04
 
             string[] materias = { "matematica", "estadística" };
 
-            Alumno alumno = new Alumno(1, "Pepe", "Ferrini", materias);
+            Alumno alumno = new Alumno(1213, "Pepe", "Ferrini", materias);
             Alumno alumno2 = new Alumno(1, "Pepe", "Ferrini", materias);
 
             Console.Write(alumno == alumno2); // true
@@ -30,8 +30,9 @@ namespace clase_04
             string nombreCompleto = alumno; // implicita
             int legajo = (int)alumno; // explicita
 
-            Console.WriteLine(nombreCompleto);
-            Console.WriteLine(legajo);
+            //Console.WriteLine($"Nombre completo: {nombreCompleto}");
+            Console.WriteLine($"Nombre completo: {(string)alumno}");
+            Console.WriteLine($"Legajo: {legajo}");
 
 
 

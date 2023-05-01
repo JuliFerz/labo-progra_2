@@ -13,7 +13,7 @@ namespace Entidades
         private string apellido;
         private string[] materias;
 
-        // Con : this llamo al constructor anterior (el de arriba).
+        // Con : this llamo al constructor de Alumno (lo heredo).
         // Se ejecuta este constructor, pero PRIMERO va al constructor de this (el de abajo)
         // asigna los valores a legajo, nombre y apellido y despues de eso entra en el body
         // de este constructor
@@ -43,6 +43,8 @@ namespace Entidades
         }
 
         // es requerido crear este porque el operador == necesita su contra parte (!=)
+        // En este caso hacemos igualdad de alumnos para usar el primer método de operador
+        // DE este modo estamos también sobre cargando el método operador ==
         public static bool operator !=(Alumno alumno1, Alumno alumno2)
         {
             // comparar si tienen el mismo legajo
