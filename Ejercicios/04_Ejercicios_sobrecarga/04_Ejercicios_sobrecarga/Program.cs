@@ -9,8 +9,8 @@ namespace _04_Ejercicios_sobrecarga
         static void Main(string[] args)
         {
             //Ejercicio_19();
-            Ejercicio_20();
-            //Ejercicio_21();
+            //Ejercicio_20();
+            Ejercicio_21();
         }
 
         public static void Ejercicio_19()

@@ -37,10 +37,6 @@ namespace Temperaturas
         {
             return this.temperatura;
         }
-        /*public static double GetCotizacion()
-        {
-            return Pesos.cotizRespectoDolar;
-        }*/
 
         // Sobrecarga de operador
         // ==
