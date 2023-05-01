@@ -9,8 +9,7 @@
         static Pesos()
         {
             //Pesos.cotizRespectoDolar = 462; // blue dollar (arg)
-            //Pesos.cotizRespectoDolar = 220.226; // official dollar (from google)
-            Pesos.cotizRespectoDolar = 1; // official dollar (from google)
+            Pesos.cotizRespectoDolar = 220.226; // official dollar (from google)
         }
         // Sobrecarga de constructor
         public Pesos(double cantidad)
@@ -50,53 +49,6 @@
         public static void SetCotizacion(double cotizacion)
         {
             Pesos.cotizRespectoDolar = cotizacion;
-        }
-
-        // Sobrecarga de operador
-        // ==
-        public static bool operator ==(Pesos p, Dolar d)
-        {
-            return (int)p.cantidad == (int)((Pesos)d).cantidad;
-        }
-        public static bool operator ==(Pesos p, Euro e)
-        {
-            return (int)p.cantidad == (int)((Pesos)e).cantidad;
-        }
-        public static bool operator ==(Pesos p1, Pesos p2)
-        {
-            return p1.cantidad == p2.cantidad;
-        }
-
-        // !=
-        public static bool operator !=(Pesos p, Dolar d)
-        {
-            return !(p == d);
-        }
-        public static bool operator !=(Pesos p, Euro e)
-        {
-            return !(p == e);
-        }
-        public static bool operator !=(Pesos p1, Pesos p2)
-        {
-            return !(p1 == p2);
-        }
-
-        // +, -
-        public static Pesos operator -(Pesos p, Dolar d)
-        {
-            return new Pesos(p.cantidad - ((Pesos)d).cantidad);
-        }
-        public static Pesos operator -(Pesos p, Euro e)
-        {
-            return new Pesos(p.cantidad - ((Pesos)e).cantidad);
-        }
-        public static Pesos operator +(Pesos p, Dolar d)
-        {
-            return new Pesos(p.cantidad + ((Pesos)d).cantidad);
-        }
-        public static Pesos operator +(Pesos p, Euro e)
-        {
-            return new Pesos(p.cantidad + ((Pesos)e).cantidad);
         }
     }
 }

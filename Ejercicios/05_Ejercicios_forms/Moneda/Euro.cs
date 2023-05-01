@@ -49,52 +49,5 @@
         {
             Euro.cotizRespectoDolar = cotizacion;
         }
-
-        // Sobrecarga de operador
-        // ==
-        public static bool operator ==(Euro e, Dolar d)
-        {
-            return e.cantidad == ((Euro)d).cantidad;
-        }
-        public static bool operator ==(Euro e, Pesos p)
-        {
-            return e.cantidad == ((Euro)p).cantidad;
-        }
-        public static bool operator ==(Euro e1, Euro e2)
-        {
-            return e1.cantidad == e2.cantidad;
-        }
-
-        // !=
-        public static bool operator !=(Euro e, Dolar d)
-        {
-            return !(e == d);
-        }
-        public static bool operator !=(Euro e, Pesos p)
-        {
-            return !(e == p);
-        }
-        public static bool operator !=(Euro e1, Euro e2)
-        {
-            return !(e1 == e2);
-        }
-
-        // +, -
-        public static Euro operator -(Euro e, Dolar d)
-        {
-            return new Euro(e.cantidad - ((Euro)d).GetCantidad());
-        }
-        public static Euro operator -(Euro e, Pesos p)
-        {
-            return new Euro(e.cantidad - ((Euro)p).GetCantidad());
-        }
-        public static Euro operator +(Euro e, Dolar d)
-        {
-            return new Euro(e.cantidad + ((Euro)d).GetCantidad());
-        }
-        public static Euro operator +(Euro e, Pesos p)
-        {
-            return new Euro(e.cantidad + ((Euro)p).GetCantidad());
-        }
     }
 }

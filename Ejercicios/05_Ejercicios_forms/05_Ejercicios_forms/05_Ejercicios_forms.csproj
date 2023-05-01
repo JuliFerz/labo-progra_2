@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Moneda\Moneda.csproj" />
+    <ProjectReference Include="..\Temperaturas\Temperaturas.csproj" />
   </ItemGroup>
 
   <ItemGroup>

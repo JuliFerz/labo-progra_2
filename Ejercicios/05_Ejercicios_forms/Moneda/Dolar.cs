@@ -44,52 +44,5 @@
         {
             return Dolar.cotizRespectoDolar;
         }
-
-        // Sobrecarga de operador
-        // ==
-        public static bool operator ==(Dolar d, Euro e)
-        {
-            return (int)(d.cantidad) == (int)((Dolar)e).cantidad;
-        }
-        public static bool operator ==(Dolar d, Pesos p)
-        {
-            return (int)d.cantidad == (int)((Dolar)p).cantidad;
-        }
-        public static bool operator ==(Dolar d1, Dolar d2)
-        {
-            return d1.cantidad == d2.cantidad;
-        }
-
-        // !=
-        public static bool operator !=(Dolar d, Euro e)
-        {
-            return !(d == e);
-        }
-        public static bool operator !=(Dolar d, Pesos p)
-        {
-            return !(d == p);
-        }
-        public static bool operator !=(Dolar d1, Dolar d2)
-        {
-            return !(d1 == d2);
-        }
-
-        // +, -
-        public static Dolar operator -(Dolar d, Euro e)
-        {
-            return new Dolar(d.GetCantidad() - ((Dolar)e).GetCantidad());
-        }
-        public static Dolar operator -(Dolar d, Pesos p)
-        {
-            return new Dolar(d.GetCantidad() - ((Dolar)p).GetCantidad());
-        }
-        public static Dolar operator +(Dolar d, Euro e)
-        {
-            return new Dolar(d.GetCantidad() + ((Dolar)e).GetCantidad());
-        }
-        public static Dolar operator +(Dolar d, Pesos p)
-        {
-            return new Dolar(d.GetCantidad() + ((Dolar)p).GetCantidad());
-        }
     }
 }

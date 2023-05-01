@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Ejercicios_forms", "05_Ejercicios_forms\05_Ejercicios_forms.csproj", "{93EAFC97-A64B-49FF-8A91-9B18C1B82F9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moneda", "Moneda\Moneda.csproj", "{39532B26-9F2B-419C-9E78-FBE8B7E2D34D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moneda", "Moneda\Moneda.csproj", "{39532B26-9F2B-419C-9E78-FBE8B7E2D34D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperaturas", "Temperaturas\Temperaturas.csproj", "{869F8F61-CE39-4651-8A60-7818250563F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{39532B26-9F2B-419C-9E78-FBE8B7E2D34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39532B26-9F2B-419C-9E78-FBE8B7E2D34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39532B26-9F2B-419C-9E78-FBE8B7E2D34D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{869F8F61-CE39-4651-8A60-7818250563F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869F8F61-CE39-4651-8A60-7818250563F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869F8F61-CE39-4651-8A60-7818250563F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869F8F61-CE39-4651-8A60-7818250563F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
