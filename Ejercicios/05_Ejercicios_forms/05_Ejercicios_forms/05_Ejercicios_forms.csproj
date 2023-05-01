@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ingresante\Registro.csproj" />
     <ProjectReference Include="..\Moneda\Moneda.csproj" />
     <ProjectReference Include="..\Temperaturas\Temperaturas.csproj" />
   </ItemGroup>

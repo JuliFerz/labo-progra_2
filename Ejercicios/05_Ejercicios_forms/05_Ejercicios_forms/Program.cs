@@ -12,11 +12,14 @@ namespace _05_Ejercicios_forms
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            // Ejercicios 23
+            // Ejercicio I02
+            Application.Run(new Registro());
+
+            // Ejercicio 23
             //Application.Run(new Conversor());
 
-            // Ejercicios 24
-            Application.Run(new Temperatura());
+            // Ejercicio 24
+            //Application.Run(new Temperatura());
         }
     }
 }
