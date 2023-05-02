@@ -34,7 +34,7 @@ namespace Contador
             for (int i = 0; i < listDict.Count; i++)
             {
                 if (i >= 3) { break; }
-                sb.Append($"\n • \"{listDict[i].Key}\" -> Usada {listDict[i].Value} veces");
+                sb.Append($"\n â€¢ \"{listDict[i].Key}\" -> Usada {listDict[i].Value} veces");
             }
             return sb;
         }
