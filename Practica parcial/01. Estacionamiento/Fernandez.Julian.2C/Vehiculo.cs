@@ -44,10 +44,19 @@ namespace Fernandez.Julian._2C
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Método genérico para calcular el cargo del estacionamiento
+        /// </summary>
+        /// <returns>dobule</returns>
         protected virtual double CargoDeEstacionamiento()
         {
             return (this.horaEgreso - this.horaIngreso).Hours;
         }
+
+        /// <summary>
+        /// Metodo genérico para mostrar los datos del vehículo
+        /// </summary>
+        /// <returns>string</returns>
         protected virtual string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -56,9 +65,18 @@ namespace Fernandez.Julian._2C
 
             return $"{sb}";
         }
+        /// <summary>
+        /// Método que valida que una patente conste solo de letras y cuya longitud sea entre 6 y 7
+        /// </summary>
+        /// <param name="patente"></param>
+        /// <returns>Regex.IsMatch</returns>
+        private bool ValidarPatente(string patente)
+        {
+            return Regex.IsMatch(patente, @"^[a-zA-Z]{6,7}$");
+        }
         #endregion
 
-        #region Operadores
+        #region Sobrecarga operadores
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
             return v1.patente == v2.patente;
@@ -66,11 +84,6 @@ namespace Fernandez.Julian._2C
         public static bool operator !=(Vehiculo v1, Vehiculo v2)
         {
             return !(v1 == v2);
-        }
-
-        private bool ValidarPatente(string patente)
-        {
-            return Regex.IsMatch(patente, @"^[a-zA-Z]{6,7}$");
         }
         #endregion
     }

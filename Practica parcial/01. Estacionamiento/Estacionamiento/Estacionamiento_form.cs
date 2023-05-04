@@ -75,5 +75,15 @@ namespace FRM_Estacionamiento
                 this.lstVehiculos.Items.Remove((Vehiculo)this.lstVehiculos.SelectedItem);
             }
         }
+
+        /* Nueva funcionalidad de prueba */
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (!(this.lstVehiculos.SelectedItem is null) && this.estacionamiento - (Vehiculo)this.lstVehiculos.SelectedItem)
+            {
+                MessageBox.Show($"Vehiculo eliminado: {this.estacionamiento.InformarSalida((Vehiculo)this.lstVehiculos.SelectedItem)}");
+                this.lstVehiculos.Items.Remove((Vehiculo)this.lstVehiculos.SelectedItem);
+            }
+        }
     }
 }

@@ -38,6 +38,7 @@
             lstVehiculos = new ListBox();
             btnAgregar = new Button();
             txtNombreEstacionamiento = new TextBox();
+            btnBorrar = new Button();
             SuspendLayout();
             // 
             // lblTipoVehiculo
@@ -128,11 +129,22 @@
             txtNombreEstacionamiento.Size = new Size(283, 23);
             txtNombreEstacionamiento.TabIndex = 10;
             // 
+            // btnBorrar
+            // 
+            btnBorrar.Location = new Point(295, 331);
+            btnBorrar.Name = "btnBorrar";
+            btnBorrar.Size = new Size(126, 47);
+            btnBorrar.TabIndex = 11;
+            btnBorrar.Text = "Borrar";
+            btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
+            // 
             // Estacionamiento_form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(737, 400);
+            Controls.Add(btnBorrar);
             Controls.Add(txtNombreEstacionamiento);
             Controls.Add(btnAgregar);
             Controls.Add(lstVehiculos);
@@ -166,5 +178,6 @@
         private ListBox lstVehiculos;
         private Button btnAgregar;
         private TextBox txtNombreEstacionamiento;
+        private Button btnBorrar;
     }
 }
