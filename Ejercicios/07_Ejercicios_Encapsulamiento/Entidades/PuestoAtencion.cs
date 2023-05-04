@@ -13,19 +13,20 @@ namespace Entidades
             get { return PuestoAtencion.numeroActual++; }
         }
 
-        private PuestoAtencion()
+        static PuestoAtencion() // es "constructor de clase"
         {
             PuestoAtencion.numeroActual = 0;
         }
         public PuestoAtencion(EPuesto puesto)
         {
-
+            this.puesto = puesto;
         }
 
         public bool Atender(Cliente cli)
         {
-            Thread.Sleep(10000);
-            return false;
+            Thread.Sleep(3000);
+            Console.WriteLine($"Cliente atendido: {cli.Nombre}");
+            return true;
         }
     }
 }
