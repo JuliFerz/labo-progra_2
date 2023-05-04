@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Fernandez.Julian._2C.Moto">
+    <Position X="4.25" Y="6.75" Width="5" />
+    <NestedTypes>
+      <Enum Name="Fernandez.Julian._2C.Moto.ETipo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Moto.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAAAEgAAAAAABAAAAAAAAgAAAAIIAAAA=</HashCode>
+      <FileName>Moto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fernandez.Julian._2C.Estacionamiento">
+    <Position X="4" Y="0.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAASAQAkAkAAAAAAAAAAAAEAAAAAAAiA=</HashCode>
+      <FileName>Estacionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fernandez.Julian._2C.Vehiculo">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Fernandez.Julian._2C.Vehiculo.EVehiculos">
+        <TypeIdentifier>
+          <NewMemberFileName>Vehiculo.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAIAAAAgEEAAABBAAAAAAAAAAAAAgoAAiI=</HashCode>
+      <FileName>Vehiculo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fernandez.Julian._2C.Automovil">
+    <Position X="0.5" Y="6.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAYAAAEgAAAAAABAAAAAAAAgAAAAIIAAAA=</HashCode>
+      <FileName>Automovil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
