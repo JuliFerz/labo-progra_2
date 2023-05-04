@@ -17,7 +17,7 @@ namespace Entidades
             this.xBase = xBase;
         }
 
-        // No tengo un atributo que sea Area (comienzo del objeto), sino lo creo acá para que sea computado
+        // No tengo un atributo que sea Area (es decir, no está creado al comienzo del objeto), sino lo creo acá para que sea computado
         // Si es abstracto NO lleva implementación, lleva la firma
         public abstract double Area { get ; }
 
