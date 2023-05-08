@@ -30,9 +30,9 @@
         {
             gbAltaAlumno = new GroupBox();
             btnCrearAlumno = new Button();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtNombre = new TextBox();
+            txtApellido = new TextBox();
+            txtDni = new TextBox();
             lblDni = new Label();
             lblApellido = new Label();
             lblNombre = new Label();
@@ -44,8 +44,8 @@
             lblInscriptosProgra = new Label();
             lblInscriptosLabo = new Label();
             lstAlumnosCreados = new ListBox();
-            lstAlumnosInscriptosProgra = new ListBox();
-            lstAlumnosInscriptosLabo = new ListBox();
+            lstAlumnosInscriptosProgramacion = new ListBox();
+            lstAlumnosInscriptosLaboratorio = new ListBox();
             gbAltaAlumno.SuspendLayout();
             gbAsignarMateria.SuspendLayout();
             SuspendLayout();
@@ -53,9 +53,9 @@
             // gbAltaAlumno
             // 
             gbAltaAlumno.Controls.Add(btnCrearAlumno);
-            gbAltaAlumno.Controls.Add(textBox3);
-            gbAltaAlumno.Controls.Add(textBox2);
-            gbAltaAlumno.Controls.Add(textBox1);
+            gbAltaAlumno.Controls.Add(txtNombre);
+            gbAltaAlumno.Controls.Add(txtApellido);
+            gbAltaAlumno.Controls.Add(txtDni);
             gbAltaAlumno.Controls.Add(lblDni);
             gbAltaAlumno.Controls.Add(lblApellido);
             gbAltaAlumno.Controls.Add(lblNombre);
@@ -74,27 +74,28 @@
             btnCrearAlumno.TabIndex = 15;
             btnCrearAlumno.Text = "Crear Alumno";
             btnCrearAlumno.UseVisualStyleBackColor = true;
+            btnCrearAlumno.Click += btnCrearAlumno_Click;
             // 
-            // textBox3
+            // txtNombre
             // 
-            textBox3.Location = new Point(241, 58);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(111, 23);
-            textBox3.TabIndex = 11;
+            txtNombre.Location = new Point(241, 58);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(111, 23);
+            txtNombre.TabIndex = 11;
             // 
-            // textBox2
+            // txtApellido
             // 
-            textBox2.Location = new Point(124, 58);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(111, 23);
-            textBox2.TabIndex = 10;
+            txtApellido.Location = new Point(124, 58);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(111, 23);
+            txtApellido.TabIndex = 10;
             // 
-            // textBox1
+            // txtDni
             // 
-            textBox1.Location = new Point(6, 58);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(111, 23);
-            textBox1.TabIndex = 9;
+            txtDni.Location = new Point(6, 58);
+            txtDni.Name = "txtDni";
+            txtDni.Size = new Size(111, 23);
+            txtDni.TabIndex = 9;
             // 
             // lblDni
             // 
@@ -146,6 +147,7 @@
             btnAsignarMateria.TabIndex = 0;
             btnAsignarMateria.Text = "Asignar al alumno seleccionado";
             btnAsignarMateria.UseVisualStyleBackColor = true;
+            btnAsignarMateria.Click += btnAsignarMateria_Click;
             // 
             // lblMateria
             // 
@@ -204,31 +206,31 @@
             lstAlumnosCreados.Size = new Size(192, 214);
             lstAlumnosCreados.TabIndex = 12;
             // 
-            // lstAlumnosInscriptosProgra
+            // lstAlumnosInscriptosProgramacion
             // 
-            lstAlumnosInscriptosProgra.FormattingEnabled = true;
-            lstAlumnosInscriptosProgra.ItemHeight = 15;
-            lstAlumnosInscriptosProgra.Location = new Point(459, 275);
-            lstAlumnosInscriptosProgra.Name = "lstAlumnosInscriptosProgra";
-            lstAlumnosInscriptosProgra.Size = new Size(192, 214);
-            lstAlumnosInscriptosProgra.TabIndex = 13;
+            lstAlumnosInscriptosProgramacion.FormattingEnabled = true;
+            lstAlumnosInscriptosProgramacion.ItemHeight = 15;
+            lstAlumnosInscriptosProgramacion.Location = new Point(459, 275);
+            lstAlumnosInscriptosProgramacion.Name = "lstAlumnosInscriptosProgramacion";
+            lstAlumnosInscriptosProgramacion.Size = new Size(192, 214);
+            lstAlumnosInscriptosProgramacion.TabIndex = 13;
             // 
-            // lstAlumnosInscriptosLabo
+            // lstAlumnosInscriptosLaboratorio
             // 
-            lstAlumnosInscriptosLabo.FormattingEnabled = true;
-            lstAlumnosInscriptosLabo.ItemHeight = 15;
-            lstAlumnosInscriptosLabo.Location = new Point(667, 275);
-            lstAlumnosInscriptosLabo.Name = "lstAlumnosInscriptosLabo";
-            lstAlumnosInscriptosLabo.Size = new Size(192, 214);
-            lstAlumnosInscriptosLabo.TabIndex = 14;
+            lstAlumnosInscriptosLaboratorio.FormattingEnabled = true;
+            lstAlumnosInscriptosLaboratorio.ItemHeight = 15;
+            lstAlumnosInscriptosLaboratorio.Location = new Point(667, 275);
+            lstAlumnosInscriptosLaboratorio.Name = "lstAlumnosInscriptosLaboratorio";
+            lstAlumnosInscriptosLaboratorio.Size = new Size(192, 214);
+            lstAlumnosInscriptosLaboratorio.TabIndex = 14;
             // 
             // Inscripcion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(893, 520);
-            Controls.Add(lstAlumnosInscriptosLabo);
-            Controls.Add(lstAlumnosInscriptosProgra);
+            Controls.Add(lstAlumnosInscriptosLaboratorio);
+            Controls.Add(lstAlumnosInscriptosProgramacion);
             Controls.Add(lstAlumnosCreados);
             Controls.Add(lblInscriptosLabo);
             Controls.Add(lblInscriptosProgra);
@@ -237,10 +239,10 @@
             Controls.Add(gbAltaAlumno);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            MinimizeBox = false;
             Name = "Inscripcion";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inscripcion alumnos";
+            Load += Inscripcion_Load;
             gbAltaAlumno.ResumeLayout(false);
             gbAltaAlumno.PerformLayout();
             gbAsignarMateria.ResumeLayout(false);
@@ -253,9 +255,9 @@
 
         private GroupBox gbAltaAlumno;
         private Button btnCrearAlumno;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtNombre;
+        private TextBox txtApellido;
+        private TextBox txtDni;
         private Label lblDni;
         private Label lblApellido;
         private Label lblNombre;
@@ -265,8 +267,8 @@
         private Label lblInscriptosProgra;
         private Label lblInscriptosLabo;
         private ListBox lstAlumnosCreados;
-        private ListBox lstAlumnosInscriptosProgra;
-        private ListBox lstAlumnosInscriptosLabo;
+        private ListBox lstAlumnosInscriptosProgramacion;
+        private ListBox lstAlumnosInscriptosLaboratorio;
         private ComboBox cbMaterias;
         private Button btnAsignarMateria;
     }

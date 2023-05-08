@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Entidades.Persona">
+    <Position X="9.25" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAQAgACEgAAAgAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Curso">
+    <Position X="15.25" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAECAAABAgAAAAAAAAAAAAAADgAAqA=</HashCode>
+      <FileName>Curso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Profesor">
+    <Position X="13.75" Y="5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAkgAEAAAAAAAQAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Profesor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Alumno">
+    <Position X="9.25" Y="5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>YAAAAAAAAAAAgAAEyAAAAAIAAAQAAAAAAAAAAAAAAiA=</HashCode>
+      <FileName>Alumno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Entidades.EMateria">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Materias.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
