@@ -9,7 +9,7 @@ namespace Entidades
     public class Curso
     {
         #region Atributos
-        private List<Persona> alumnos = new List<Persona>();
+        private List<Persona> alumnos;
         private EMateria materia;
         private Persona profesor;
         #endregion
@@ -17,7 +17,7 @@ namespace Entidades
 
         #region Propiedades
         public List<Persona> Alumnos { get => this.alumnos; }
-        public Profesor Profesor { get; set; }
+        public Profesor Profesor { get => (Profesor)this.profesor; set => this.profesor = value; }
         #endregion
 
 
@@ -26,6 +26,7 @@ namespace Entidades
         {
             this.materia = profesor.Materia;
             this.profesor = profesor;
+            this.alumnos = new List<Persona>();
         }
         #endregion
 
