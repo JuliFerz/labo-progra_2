@@ -1,4 +1,4 @@
-﻿using Entidades;
+﻿using Ejercicio_36;
 
 namespace _08_Ejercicios_Herencia
 {
@@ -6,18 +6,29 @@ namespace _08_Ejercicios_Herencia
     {
         static void Main(string[] args)
         {
-            Random azar = new Random();
-            Competencia formulaUno = new Competencia(10, 5, Competencia.TipoCompetencia.F1);
-            AutoF1[] autos = new AutoF1[10];
+            //Ejercicio_36();
+            Ejercicio_37();
+            
+        }
+        public static void Ejercicio_36()
+        {
+            //Random azar = new Random();
+            //Competencia formulaUno = new Competencia(10, 5, Competencia.TipoCompetencia.F1);
+            //AutoF1[] autos = new AutoF1[10];
 
-            for (int i = 0; i < autos.Length; i++)
-            {
-                autos[i] = new AutoF1((short)i, azar.Next(1, 5).ToString());
-                if ((formulaUno + autos[i]) == true)
-                {
-                    Console.WriteLine("Se Agrego el siguiente auto a la competencia: {0}", autos[i].MostrarDatos());
-                }
-            }
+            //for (int i = 0; i < autos.Length; i++)
+            //{
+            //    autos[i] = new AutoF1((short)i, azar.Next(1, 5).ToString());
+            //    if ((formulaUno + autos[i]) == true)
+            //    {
+            //        Console.WriteLine("Se Agrego el siguiente auto a la competencia: {0}", autos[i].MostrarDatos());
+            //    }
+            //}
+        }
+
+        public static void Ejercicio_37()
+        {
+
         }
     }
 }

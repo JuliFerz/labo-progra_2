@@ -1,4 +1,4 @@
-﻿namespace Entidades
+﻿namespace Ejercicio_36
 {
     public class Competencia
     {
