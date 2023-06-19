@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clase_18", "clase_18\clase_18.csproj", "{6949E883-DB82-4A66-8EEE-6D9FCD69EF97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consola", "Consola\Consola.csproj", "{CDE8C1C5-DA8C-4739-A6F9-C2188BA74BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{79AE4EA4-8F6A-4A87-9BA2-161F497A89EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6949E883-DB82-4A66-8EEE-6D9FCD69EF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6949E883-DB82-4A66-8EEE-6D9FCD69EF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6949E883-DB82-4A66-8EEE-6D9FCD69EF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6949E883-DB82-4A66-8EEE-6D9FCD69EF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE8C1C5-DA8C-4739-A6F9-C2188BA74BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE8C1C5-DA8C-4739-A6F9-C2188BA74BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE8C1C5-DA8C-4739-A6F9-C2188BA74BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE8C1C5-DA8C-4739-A6F9-C2188BA74BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79AE4EA4-8F6A-4A87-9BA2-161F497A89EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79AE4EA4-8F6A-4A87-9BA2-161F497A89EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79AE4EA4-8F6A-4A87-9BA2-161F497A89EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79AE4EA4-8F6A-4A87-9BA2-161F497A89EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E85B7A0B-4EDB-4264-A81C-8CEA97CAD5B7}
+	EndGlobalSection
+EndGlobal
