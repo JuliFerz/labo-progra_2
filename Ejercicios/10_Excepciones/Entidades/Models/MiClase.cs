@@ -8,6 +8,9 @@ using Entidades.Exceptions;
 
 namespace Entidades.Models
 {
+    /*
+     * Ejercicio_I01
+     */
     public class MiClase
     {
         public MiClase()
@@ -29,7 +32,7 @@ namespace Entidades.Models
             }
             catch (Exception e)
             {
-                //throw 
+                throw new UnaExcepcion("Este es el constructor con parámetro de mi clase", e);
             }
         }
 

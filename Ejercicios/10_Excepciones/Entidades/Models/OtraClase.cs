@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Entidades.Models
 {
+    /*
+     * Ejercicio_I01
+     */
     public class OtraClase
     {
         public void MetodoInstancia()

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades.Exceptions
 {
+    /*
+     * Ejercicio_I01
+     */
     public class UnaExcepcion : Exception
     {
         public UnaExcepcion(string? message) : base(message)
