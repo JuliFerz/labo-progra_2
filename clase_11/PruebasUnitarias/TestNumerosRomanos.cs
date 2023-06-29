@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PruebasUnitarias
 {
-    [TestClass]
+    [TestClass] // Se debe declarar la clase entera como test para pruebas unitarias
     public class TestNumerosRomanos
     {
         [TestMethod]
@@ -63,18 +63,17 @@ namespace PruebasUnitarias
         }
 
 
-
-
         [TestMethod]
+        [DataRow(0)]
         [ExpectedException(typeof(NumeroInvalidoException))]
-        public void AlRecibirInvalido_DeberiaObtenerUnError()
+        public void AlRecibirInvalido_DeberiaObtenerUnError(int nro)
         {
             // * Arrange
             // given
 
             // * Act
             // when
-            string resultado = Conversor.ConvertirANumeroRomano(0);
+            string resultado = Conversor.ConvertirANumeroRomano(nro);
 
             // * Assert
             // then

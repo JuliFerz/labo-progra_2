@@ -27,7 +27,6 @@ namespace Entidades.Modelo
             {
                 return "IV";
             }
-
             if (nro > 4 && nro < 9)
             {
                 sb.Append("V");
