@@ -15,6 +15,7 @@ namespace Entidades
      */
     public static class MetodosExtension
     {
+        /* Ejercicio_I01 */
         public static string ObtenerPlacaCronicaTV(this DateTime fecha, EEstaciones estacion)
         {
             DateTime fechaEstacion = Estaciones.ObtenerFechaEstacion(estacion);
@@ -25,6 +26,12 @@ namespace Entidades
                 resultadoFecha = (fechaEstacion.Date - fecha.Date).Days;
             }
             return $"Faltan {resultadoFecha} dias para {estacion.ToString().ToLower()}";
+        }
+
+        /* Ejercicio_I02 */
+        public static int ContarCantidadDeDigitos(this Int64 nro)
+        {
+            return nro.ToString().Length;
         }
     }
 }
