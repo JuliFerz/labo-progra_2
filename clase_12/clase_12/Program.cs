@@ -8,13 +8,13 @@ namespace clase_12
         {
             //MiClaseGenerica<int> miClaseGenerica = new MiClaseGenerica<int>();
             //MiClaseGenerica<string> miClaseGenericaTexto = new MiClaseGenerica<string>();
-            //miClaseGenerica.ImprimirValor(10); // Se especifica el tipo para bvuenas practicas
-            //miClaseGenericaTexto.ImprimirValor("qwerty"); // Se especifica el tipo para bvuenas practicas
+            //miClaseGenerica.ImprimirValor(10); // Se especifica el tipo para buenas practicas
+            //miClaseGenericaTexto.ImprimirValor("qwerty"); // Se especifica el tipo para buenas practicas
 
             //MiClaseGenerica miClaseGenerica = new MiClaseGenerica();
             //MiClaseGenerica miClaseGenericaTexto = new MiClaseGenerica();
-            //miClaseGenerica.ImprimirValor<int>(10); // Se especifica el tipo para bvuenas practicas
-            //miClaseGenericaTexto.ImprimirValor<string>("qwerty"); // Se especifica el tipo para bvuenas practicas
+            //miClaseGenerica.ImprimirValor<int>(10); // Se especifica el tipo para buenas practicas
+            //miClaseGenericaTexto.ImprimirValor<string>("qwerty"); // Se especifica el tipo para buenas practicas
 
 
             MiClaseGenerica<Persona> miClaseGenerica = new MiClaseGenerica<Persona>();
