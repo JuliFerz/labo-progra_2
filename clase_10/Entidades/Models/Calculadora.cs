@@ -44,14 +44,15 @@ namespace Entidades.Models
                 Console.WriteLine("Esto se ejecuta siempre dentro de dividir()");
             }*/
 
-            try
-            {
-                return this.numeroA / this.numeroB;
-            }
-            catch (DivideByZeroException ex)
-            {
-                throw new ArgumentoInvalidoException("El divisor no puede ser cero", ex);
-            }
+            return this.numeroA / this.numeroB;
+            //try
+            //{
+            //    return this.numeroA / this.numeroB;
+            //}
+            //catch (DivideByZeroException ex)
+            //{
+            //    throw new ArgumentoInvalidoException("El divisor no puede ser cero", ex);
+            //}
         }
         public double Multiplicar()
         {
