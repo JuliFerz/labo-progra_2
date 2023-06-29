@@ -41,7 +41,8 @@ namespace Entidades.Modelos
 
         int IGenerica<int>.EnviarMensaje()
         {
-            throw new NotImplementedException();
+            this.estado = !this.estado;
+            return 0;
         }
     }
 }

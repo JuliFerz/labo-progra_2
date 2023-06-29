@@ -10,7 +10,7 @@ namespace Entidades.Modelos
     public class Email : IMensaje
     {
         private bool estado;
-        public bool Estado => throw new NotImplementedException();
+        public bool Estado => this.estado;
 
         public string EnviarMensaje()
         {
