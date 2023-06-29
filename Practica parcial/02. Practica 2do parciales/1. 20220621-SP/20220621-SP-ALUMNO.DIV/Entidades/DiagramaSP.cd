@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Entidades.Exceptions.DataBaseManagerException">
+    <Position X="0.5" Y="5.75" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\DataBaseManagerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Exceptions.FileManagerException">
+    <Position X="5.5" Y="5.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\FileManagerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Models.Ahorcado&lt;T&gt;">
+    <Position X="0.5" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>gQAAAAApACAAAAQAAAABAACIECIAACAAAAAAAIABAAA=</HashCode>
+      <FileName>Models\Ahorcado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Models.Pais" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Pais.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entidades.Models.Vehiculo" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Vehiculo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entidades.DataBase.DataBaseManager">
+    <Position X="4.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>DataBase\DataBaseManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Files.FileManager">
+    <Position X="16.25" Y="5.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAACAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Files\FileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Extension.RandomExtension">
+    <Position X="10" Y="5.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Extension\RandomExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Entidades.Interfaces.ILector">
+    <Position X="13.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
